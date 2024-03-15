@@ -1,0 +1,13 @@
+{
+    "name": "Rust Development",
+    "image": "rust:latest",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "rust-lang.rust"
+    ],
+    "forwardPorts": [],
+    "postCreateCommand": "rustup component add rust-analysis rust-src rustfmt clippy",
+    "remoteUser": "root"
+}
